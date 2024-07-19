@@ -1,0 +1,173 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5FFFA; /* Mint Cream */
+}
+
+header {
+    background: linear-gradient(to right, #004d40, #00796b); /* Deep teal to teal gradient */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Larger font size for navigation links */
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c8e6c9; /* Light green */
+    transform: scale(1.1); /* Slightly enlarge link on hover */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+main {
+    flex: 1;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #ffffff; /* White background for content */
+    animation: fadeIn 1s ease-in-out;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background: rgba(241, 248, 233, 0.8); /* Light green background with transparency */
+    position: relative;
+    animation: slideIn 1s ease-out;
+    border: 1px solid #c8e6c9; /* Light green border for sections */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: scale(1.02); /* Slightly enlarge section on hover */
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.background h1, .background h2, .background p {
+    margin: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.background h1 {
+    font-size: 2.5rem; /* Larger font size for main heading */
+    font-weight: bold; /* Bold font weight for emphasis */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.background h2 {
+    font-size: 2rem; /* Larger font size for section headings */
+    font-weight: bold; /* Bold font weight for emphasis */
+}
+
+.background p {
+    font-size: 1rem; /* Default font size for paragraphs */
+    line-height: 1.6; /* Improved readability */
+    max-width: 800px;
+}
+
+footer {
+    background: #004d40; /* Deep teal background for footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+.image-gallery img{
+    height: 250px;
+    margin-left: 10px;
+}
+.image-gallery{
+    display: flex;
+}
+home h1 :hover{
+    color: black;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hover effects */
+.section-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    filter: brightness(1.1); /* Brighten image on hover */
+    box-shadow: 0 8px 
+}
